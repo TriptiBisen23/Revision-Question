@@ -72,6 +72,18 @@
 // console.log("b:", b); 
 
 
+//----------------------------------------------------------6 METHOD-------------------------------------------------------------------------
+//  const input = require("readline-sync");
+//  let a = input.questionInt("enter the 1 number:");
+// let b = input.questionInt("enter the 2 number:");
+//  let t = 5;
+// let s = 10;
+// ({a, b} = {a: b, b: a});
+// console.log(a, b);
+// a=[]
+
+
+
 
 
 
@@ -497,3 +509,267 @@ let num;
    } else {
     console.log(`is not a strong number.`);
     }
+
+
+
+
+
+
+//CONCREATE QUESTIONS
+
+const input = require("readline-sync");
+let a = input.prompt("Enter the number:");
+let b = input.prompt("Enter the number:");
+let c = input.prompt("Enter the number:");
+
+ d=a+b+c;
+console.log(d);      
+
+
+
+
+
+
+// TRIANGLE 
+
+const input = require("readline-sync");
+
+let a = input.questionInt("Enter the number:");
+let b = input.questionInt("Enter the number:");
+let c = input.questionInt("Enter the number:");
+
+if(a+b+c==180)
+{
+    console.log("valid");
+    if(a==b==c)
+    {
+        console.log("eqult. trngle");
+    } else if (a == 90)
+    {
+        console.log("right angle trngle");
+    } else if(b == 90)
+    {
+        console.log("right angle triangle");
+    } else if(c == 90)
+    {
+        console.log("right angle triangle");
+    } else if(a>90)
+    {
+        console.log("sclane");
+    } else if(b>90)
+    {
+        console.log("sclane");
+    } else if(c>90)
+    {
+        console.log("sclane");
+    } else if(a<90)
+    {
+        console.log("acute");
+    }
+} else{
+    console.log("obtus");
+}
+{
+    console.log("invalid");
+}
+
+
+
+
+
+
+// 12345678 - 87651234
+
+const input = require("readline-sync");
+
+let n = input.questionInt("Enter the number:");
+
+//  let originalNumber = n;
+
+// const digit1 = Math.floor(originalNumber / 10000000);
+// const digit2 = Math.floor((originalNumber % 10000000) / 1000000);
+// const digit3 = Math.floor((originalNumber % 1000000) / 100000);
+// const digit4 = Math.floor((originalNumber % 100000) / 10000);
+// const digit5 = Math.floor((originalNumber % 10000) / 1000);
+// const digit6 = Math.floor((originalNumber % 1000) / 100);
+// const digit7 = Math.floor((originalNumber % 100) / 10);
+// const digit8 = originalNumber % 10;
+
+//  const swappedNumber = digit8 * 10000000 + digit7 * 1000000 + digit6 * 100000 + digit5 * 10000 +
+//                        digit1 * 1000 + digit2 * 100 + digit3 * 10 + digit4;
+
+// console.log(`Original number: ${originalNumber}`);
+// console.log(`Swapped number: ${swappedNumber}`);
+
+
+
+ r = n%10000
+ q = Math.floor(n/10000)
+ s = (r*10000+q)
+ console.log(s);
+
+
+
+
+
+
+
+
+// DUPLICATE NUMBER
+
+const input = require("readline-sync");
+let n = input.questionInt("Enter the length of array:");
+let arr = [];
+for(let i=0; i<n; i++)
+{
+    arr[i] = input.questionInt("enter the element no.:")
+}
+for(i=0; i<n; i++)
+{
+    let c=1;
+    for(let j=i+1; j<n; j++)
+    {
+        if(arr[i]==arr[j])
+        {
+            c++;
+        }
+        c=c;
+    } 
+    if(c>1)
+    {
+        console.log((arr[i]),"duplicate ");
+    } else 
+    {
+        console.log("1");
+    }
+}
+
+
+
+
+
+// MODULES
+
+const input = require("readline-sync");
+let n = input.questionInt("Enter the num:");
+let b = input.questionInt("Enter the num:");
+
+
+a = Math.floor(n/b);
+console.log(a);
+
+
+
+
+
+// PALANDROME
+
+const input = require("readline-sync");
+
+let str = input.question("Enter a string:"); 
+let firstStr = str;
+let lastStr = "";
+let i = str.length -1;
+
+while (i >= 0) {
+    lastStr += str[i];
+    i--;
+}
+
+if (firstStr === lastStr) {
+    console.log("Yes, it's a palindrome.");
+} else {
+    console.log("No, it's not a palindrome.");
+}
+
+
+
+
+
+// SNAKE PATTERN
+
+const input = require("readline-sync");
+
+let rows = input.questionInt("Enter the number:");
+let column = input.questionInt("Enter the number:");
+
+let snakepattern = [];
+
+for(let i = 0; i<rows; i++)
+{
+   snakepattern[i] = [];
+   for(let j = 0; j<column; j++) 
+   {                                                           
+    if(i%2 == 0) {
+        snakepattern[i][j] = i*column + j + 1;
+    } else {
+        snakepattern[i][column - j -1] = i*column + j +1;
+    }
+   }
+}
+for(let i = 0; i<rows; i++)
+{
+    
+    console.log(snakepattern[i]);
+
+}
+
+
+
+
+
+
+// index array
+
+
+const input = require("readline-sync");
+let n = input.questionInt("Enter the length:");
+
+let arr = [];
+let i = 0;
+
+while(i<n)
+{
+    arr[i] = input.questionInt("enter the elements:");
+    i++;
+} console.log(arr);
+ i = 0;
+ let arr2 = [];
+ while(i<n)
+ {
+    arr2[i] = arr[n-1]
+    i++;
+ 
+ }
+console.log(arr2);
+
+
+
+
+
+
+// ARMSTRONG NUMBER
+
+const number = require("readline-sync");
+
+let n = number.questionInt("enter number: ");
+let count = 0 ;
+let sum = 0;
+let m = n;
+let p = m;
+
+while(m>0){
+    r =m%10;
+    count++;
+    m= Math.floor(m/10);}
+
+    while(n>0){
+        k=n%10;
+        sum = sum + k**count;
+        n= Math.floor(n/10);
+    }
+
+    if(sum==p){
+        console.log("sum is armstron",sum);
+    }
+    else {console.log("sum is not armstron",sum);}

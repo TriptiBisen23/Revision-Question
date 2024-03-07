@@ -463,3 +463,37 @@ for(let p = 1; r>0; r--)
 {
     console.log("not");
 } console.log(s);
+
+
+
+
+
+const input = require("readline-sync");
+let n = input.questionInt("enter the num:");
+let num;
+
+{
+    let originalNum = num;
+    let sum = 0;
+  
+    while (num > 0) {
+      c = num % 10;
+      let factorial = 1;
+  
+      for (let i = 1; i <= digit; i++) {
+        factorial *= i;
+      }
+  
+      sum += factorial;
+      num = Math.floor(num / 10);
+    }
+  
+     sum === originalNum;
+  }
+  
+  
+  if (num) {
+    console.log(`is a strong number.`);
+   } else {
+    console.log(`is not a strong number.`);
+    }

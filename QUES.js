@@ -42,6 +42,38 @@
 
 
 
+//      ----------------------------------------------------------- 3 METHOD----------------------------------------------------------
+// const input = require("readline-sync");
+// let a = input.questionInt("enter the 1 number:");
+// let b = input.questionInt("enter the 2 number:");
+// a = a^b
+// b = a^b
+// a = a^b
+// console.log(a,b);
+
+
+
+// -------------------------------------------------------------------4 METHOD------------------------------------------------------------
+// const input = require("readline-sync");
+// let a = input.questionInt("enter the 1 number:");
+// let b = input.questionInt("enter the 2 number:");
+// a = a*b;
+// b = Math.floor(a/b);
+// a = Math.floor(a/b);
+// console.log(a,b);
+
+
+//-----------------------------------------------------------5 METHOD------------------------------------------------------------------------
+// const input = require("readline-sync");
+// let a = input.questionInt("enter the 1 number:");
+// let b = input.questionInt("enter the 2 number:");
+// [a, b] = [b, a];
+// console.log("a:", a); 
+// console.log("b:", b); 
+
+
+
+
 
 // wap to two sides from the users and tell that it is square or rectangle.
 // const input = require("readline-sync");

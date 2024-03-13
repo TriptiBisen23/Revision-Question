@@ -719,6 +719,40 @@ for(let i = 0; i<rows; i++)
 
 
 
+const input= require("readline-sync");
+
+let n = input.questionInt("Enter the value: ");
+
+let p = "";
+let k = 0;
+
+for (let i = 1; i <= n; i++) 
+{
+    for (let j = 1; j <= n; j++) 
+    {
+        if (i %2=== 0) 
+        {
+            
+            p += " "+k;
+            k--;
+        } else 
+          {
+    
+            k++;
+            p +=  " "+k;
+            
+            
+          }
+    }
+       k += n;
+       p+="\n";
+}      
+      console.log(p);
+
+
+
+
+
 // index array
 
 

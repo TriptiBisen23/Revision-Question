@@ -807,3 +807,35 @@ while(m>0){
         console.log("sum is armstron",sum);
     }
     else {console.log("sum is not armstron",sum);}
+
+
+
+
+
+// BUBBLE SORT QUESTION.
+
+const input = require("readline-sync");
+
+let n = input.questionInt("Enter the number of elements: ");
+
+let arr = [];
+
+for (let i = 0; i < n; i++)
+ {
+    arr[i] = input.questionInt("enter the element:");
+ }
+
+for (let i = 0; i < n - 1; i++) 
+{
+    for (let j = 0; j < n - i - 1; j++) 
+    {
+        if (arr[j] > arr[j + 1]) 
+        {
+            
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+        console.log("Bubble Sorted array:", arr);
